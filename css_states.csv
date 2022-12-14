@@ -1,0 +1,16 @@
+﻿IP,Test_Name,Status,Remarks
+DSP_connectivity,fractured_unsigned_comb_mult,Passed,
+DSP_connectivity,unsigned_a_signed_b_comb_mult,Passed,
+DSP_connectivity,fractured_signed_comb_mult,Passed,
+DSP_connectivity,ios_to_dsp,Passed,
+DSP_connectivity,signed_a_unsigned_b_comb_mult,Passed,
+DSP_connectivity,signed_comb_mult,Passed,
+DSP_connectivity,unsigned_comb_mult,Passed,
+CLB_connectivity,dff_mix,Failed,"                TEST_FAILED             
+"
+CLB_connectivity,dff,Failed,"                TEST_FAILED             
+"
+CLB_connectivity,buff,Failed,"                TEST_FAILED             
+"
+CLB_connectivity,and2,Failed,"                TEST_FAILED             
+"
