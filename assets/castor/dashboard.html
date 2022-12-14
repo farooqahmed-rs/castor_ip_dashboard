@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Dashboard</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.colResizable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    }  });
+  $("table").colResizable({    liveDrag:true,
+    fixed:false,
+    draggingClass:"dragging"
+  });
+});
+</script>
+</head>
+<body><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Dashboard</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-center">
+Date: Wed Dec 14 15:46:28 2022
+<br clear=all>
+User: fahmed
+<br clear=all>
+Version: S-2021.09-SP2<br clear=all>
+Command line: urg -dir results/RTL_SIM/soc_top_test_bottom_2_a2f_/simv.vdb results/RTL_SIM/soc_top_test_bottom_3_a2f_/simv.vdb results/RTL_SIM/soc_top_test_bottom_5_a2f_/simv.vdb results/RTL_SIM/soc_top_test_bottom_6_a2f_/simv.vdb results/RTL_SIM/soc_top_test_bottom_8_a2f_/simv.vdb results/RTL_SIM/soc_top_test_bottom_9_a2f_/simv.vdb results/RTL_SIM/soc_top_test_bottom_a2f_2_top_f2a_/simv.vdb results/RTL_SIM/soc_top_test_bottom_a2f_3_top_f2a_/simv.vdb results/RTL_SIM/soc_top_test_bottom_a2f_5_top_f2a_/simv.vdb results/RTL_SIM/soc_top_test_bottom_a2f_6_top_f2a_/simv.vdb results/RTL_SIM/soc_top_test_bottom_a2f_8_top_f2a_/simv.vdb results/RTL_SIM/soc_top_test_bottom_a2f_9_top_f2a_/simv.vdb results/RTL_SIM/soc_top_test_ios_to_bram_/simv.vdb results/RTL_SIM/soc_top_test_left_a2f_2_right_f2a_/simv.vdb results/RTL_SIM/soc_top_test_left_a2f_3_right_f2a_/simv.vdb results/RTL_SIM/soc_top_test_left_a2f_4_right_f2a_/simv.vdb results/RTL_SIM/soc_top_test_left_a2f_5_right_f2a_/simv.vdb results/RTL_SIM/soc_top_test_left_a2f_6_right_f2a_/simv.vdb results/RTL_SIM/soc_top_test_left_a2f_7_right_f2a_/simv.vdb results/RTL_SIM/soc_top_test_right_a2f_2_left_f2a_/simv.vdb results/RTL_SIM/soc_top_test_right_a2f_3_left_f2a_/simv.vdb results/RTL_SIM/soc_top_test_right_a2f_4_left_f2a_/simv.vdb results/RTL_SIM/soc_top_test_right_a2f_5_left_f2a_/simv.vdb results/RTL_SIM/soc_top_test_right_a2f_6_left_f2a_/simv.vdb results/RTL_SIM/soc_top_test_right_a2f_7_left_f2a_/simv.vdb results/RTL_SIM/soc_top_test_top_a2f_2_bottom_f2a_/simv.vdb results/RTL_SIM/soc_top_test_top_a2f_3_bottom_f2a_/simv.vdb results/RTL_SIM/soc_top_test_top_a2f_5_bottom_f2a_/simv.vdb results/RTL_SIM/soc_top_test_top_a2f_6_bottom_f2a_/simv.vdb results/RTL_SIM/soc_top_test_top_a2f_8_bottom_f2a_/simv.vdb results/RTL_SIM/soc_top_test_top_a2f_9_bottom_f2a_/simv.vdb 
+<br clear=all>
+Number of tests: 31<br clear=all>
+<hr>
+<b>Total Coverage Summary</b>&nbsp;<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>BRANCH</td></tr><tr>
+<td class="s3 cl rt"> 37.01</td>
+<td class="s4 cl rt"> 49.95</td>
+<td class="s1 cl rt"> 11.16</td>
+<td class="s4 cl rt"> 49.92</td>
+</tr></table><br clear=all>
+<hr>
+<b>Hierarchical coverage data for top-level instances</b>&nbsp;<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s0 cl rt">  6.29</td>
+<td class="s1 cl rt"> 15.36</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  3.50</td>
+<td class="wordwrap"><a href="mod1695.html#inst_tag_706335" >FCB_TOP</a></td>
+</tr><tr>
+<td class="s1 cl rt"> 15.00</td>
+<td class="s3 cl rt"> 30.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod634.html#inst_tag_308347" >apb_master</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1183.html#inst_tag_453033" >cbx_10__1_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod629.html#inst_tag_308220" >cbx_1__1_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1645.html#inst_tag_706144" >cbx_4__2_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1393.html#inst_tag_456037" >cbx_4__3_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1372.html#inst_tag_456009" >cbx_4__4_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod244.html#inst_tag_35782" >cbx_7__2_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod6.html#inst_tag_6" >cbx_7__3_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1197.html#inst_tag_453073" >cby_10__1_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1004.html#inst_tag_425537" >cby_1__1_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod2023.html#inst_tag_754710" >cby_4__2_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod626.html#inst_tag_308092" >cby_7__2_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod383.html#inst_tag_205658" >cby_7__4_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1431.html#inst_tag_457867" >clkmux</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod423.html#inst_tag_206001" >direct_interc</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod990.html#inst_tag_425482" >grid_io_right_bottom</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod2036.html#inst_tag_754725" >grid_io_right_top</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod974.html#inst_tag_425466" >sb_0__0_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod807.html#inst_tag_316538" >sb_0__8_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1762.html#inst_tag_706756" >sb_10__0_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1781.html#inst_tag_706786" >sb_10__1_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1792.html#inst_tag_706803" >sb_10__2_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1603.html#inst_tag_705875" >sb_10__8_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1321.html#inst_tag_455810" >sb_1__0_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1385.html#inst_tag_456022" >sb_1__1_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1165.html#inst_tag_452693" >sb_1__8_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1735.html#inst_tag_706692" >sb_2__1_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod1510.html#inst_tag_601177" >sb_2__8_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod2354.html#inst_tag_824454" >sb_4__2_</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wordwrap"><a href="mod2136.html#inst_tag_775271" >sb_4__3_</a></td>
+</tr><tr>
+<td class="s4 cl rt"> 48.63</td>
+<td class="s5 cl rt"> 50.02</td>
+<td class="s4 cl rt"> 45.86</td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="wordwrap"><a href="mod1064_0.html#inst_tag_425952" >soc_test</a></td>
+</tr><tr>
+<td class="s4 cl rt"> 49.28</td>
+<td class="s6 cl rt"> 61.87</td>
+<td class="s3 cl rt"> 35.24</td>
+<td class="s5 cl rt"> 50.74</td>
+<td class="wordwrap"><a href="mod750.html#inst_tag_311307" >tb_top</a></td>
+</tr><tr>
+<td class="s3 cl rt"> 30.91</td>
+<td class="s3 cl rt"> 31.82</td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"> 30.00</td>
+<td class="wordwrap"><a href="mod939.html#inst_tag_327399" >uvm_custom_install_recording</a></td>
+</tr><tr>
+<td class="s0 cl rt">  7.70</td>
+<td class="s0 cl rt">  5.10</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s1 cl rt"> 18.00</td>
+<td class="wordwrap"><a href="mod2029.html#inst_tag_754718" >uvm_custom_install_verdi_recording</a></td>
+</tr></table><br clear=all>
+<hr>
+<b>Total Module Definition Coverage Summary</b>&nbsp;<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>BRANCH</td></tr><tr>
+<td class="s3 cl rt"> 37.09</td>
+<td class="s4 cl rt"> 49.95</td>
+<td class="s1 cl rt"> 11.38</td>
+<td class="s4 cl rt"> 49.93</td>
+</tr></table></div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>
